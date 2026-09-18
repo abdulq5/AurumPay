@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "AurumPay",
+    "slug": "aurumpay",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "aurumpay",
+    "android": {
+      "package": "com.aurumpay.mobile"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      "expo-camera",
+      "@react-native-community/datetimepicker"
+    ]
+  }
+}

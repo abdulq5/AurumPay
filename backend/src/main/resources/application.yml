@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    default: h2
+  application:
+    name: aurumpay-core
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+  flyway:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+server:
+  port: 8080
+security:
+  jwt:
+    secret: ${JWT_SECRET:change-me-in-development-use-a-long-random-secret}
+    access-token-seconds: ${JWT_ACCESS_TOKEN_SECONDS:900}

@@ -1,0 +1,3 @@
+import { Stack } from 'expo-router'; import { StyleSheet, Text, View } from 'react-native';
+export default function Screen(){return <View style={s.page}><Stack.Screen options={{headerShown:true,title:'Loan'}}/><Text style={s.title}>Loan</Text><Text style={s.text}>This workflow is being built as a production transaction flow. Business rules, wallet availability, pricing, reservations and audit controls will be enforced by AurumPay Core.</Text></View>}
+const s=StyleSheet.create({page:{flex:1,padding:24,paddingTop:80,backgroundColor:'#F7F8FA'},title:{fontSize:30,fontWeight:'800',color:'#071A2D'},text:{fontSize:16,color:'#667085',lineHeight:24,marginTop:12}});

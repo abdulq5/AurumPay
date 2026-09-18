@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:18
+    container_name: aurumpay-postgres
+    environment:
+      POSTGRES_DB: aurumpay
+      POSTGRES_USER: aurumpay
+      POSTGRES_PASSWORD: aurumpay
+    ports: ["5432:5432"]
+    volumes: ["aurumpay_pg:/var/lib/postgresql"]
+  redis:
+    image: redis:8
+    container_name: aurumpay-redis
+    ports: ["6379:6379"]
+volumes:
+  aurumpay_pg:
